@@ -30,5 +30,9 @@ All algorithms will write their results to *adfa_competitors.csv* and *cicids_co
 
 We recommend to execute with the following order.
 
-1. Execute ALAD (eGAN). 
+1. Execute ALAD (eGAN). Move to the folder where you installed ALAD, and you can execute ALAD on ADFANet and CICIDS respectively with:
+
+python3 main.py  gan adfa run --nb_epochs=20 --label=1 --w=0.1 --m='cross-e' --d=2 --rd=42
+
+python3 main.py  gan cicids run --nb_epochs=35 --label=1 --w=0.1 --m='cross-e' --d=2 --rd=42
 
