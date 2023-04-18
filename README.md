@@ -36,3 +36,5 @@ python3 main.py  gan adfa run --nb_epochs=20 --label=1 --w=0.1 --m='cross-e' --d
 
 python3 main.py  gan cicids run --nb_epochs=35 --label=1 --w=0.1 --m='cross-e' --d=2 --rd=42
 
+
+2. Execute ARN. It is sufficient to execute the notebooks ADFA-ARN_ADFA_REV_Generation.ipynb and CICIDS-ARN_CICIDS_REV_Generation.ipynb . You should just have to configure PATHS to your own folders.
