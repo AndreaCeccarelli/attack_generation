@@ -18,17 +18,17 @@ Instructions to reproduce the results of the paper are below.
 
 3a - replace the files we provide in this repo, in the ALAD folder, with the one provided by the authors. The files are configured to execute ADAFANet and CICIDS18.
 
-4- download ARN from https://github.com/arnwg/arn
+4- download and install ARN from https://github.com/arnwg/arn
 
 5- install the conda environment notebook.yml provided with this github
 
-6- install CICIDS18 and ADFANet datasets. The easiest is to use the versions already prepared by us and available in the zip files adfa.zip and cicids.zip. These are the train-test split we used in the paper. Otherwise, you can re-create them using the jupyter notebooks "zero-day attack generation-ADFA" and "zero-day attack generation-CICIDS" and starting from the CSVs that you can get from CICIDS18 and ADFANet web sites. 
+6- get CICIDS18 and ADFANet datasets. The easiest is to use the versions already prepared by us and available in the zip files adfa.zip and cicids.zip. These are the train-test split we used in the paper. Otherwise, you can re-create them using the jupyter notebooks "zero-day attack generation-ADFA" and "zero-day attack generation-CICIDS" and starting from the CSVs. 
 
-N.B. The train-test splits provided has NO attacks in the training set. All attacks are in the test set. Obviously, to run supervised algorithms, you need to re-balance the train and test. Recommended (very quick) approach is to merge train and test, shuffle, and make a new split.
+N.B. The train-test splits provided has NO attacks in the training set. All attacks are in the test set. Obviously, to run supervised algorithms, you need to re-balance the train and test. In this case, easiest is to use the CSVs (and the code we provided) and make a new train-test split.
 
 **CONFIGURATION**
 
-It is necessary to set the proper PATHS. The easiest way is to searchthe tag "notebook"  through all files, and replace the identified paths with your paths. You can also just run and check the error messages. The PATHs should be to directories where you have read and write access.
+It is necessary to set the proper PATHS. The easiest way is to search the tag "notebook" through all files, and replace the identified paths with your paths. You can also just run and check the error messages. The PATHs should be to directories where you have read and write access.
 
 
 **EXECUTION**
