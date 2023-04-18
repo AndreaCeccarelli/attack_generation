@@ -17,9 +17,11 @@ Instructions to reproduce the results of the paper.
 
 4- download ARN from https://github.com/arnwg/arn
 
-5- install the conda environment attack.yaml
+5- install the conda environment notebook.yml provided with this github
 
-6- download CICIDS18 and ADFANet datasets. Pre-processed versions are also available, for example you can use the ones provided here in this repository.
+6- install CICIDS18 and ADFANet datasets. The easiest is to use the versions already prepared by us and available in the zip files adfa.zip and cicids.zip. These are the train-test split we used in the paper. Otherwise, you can re-create them using the jupyter notebooks "zero-day attack generation-ADFA" and "zero-day attack generation-CICIDS" and starting from the CSVs that you can get from CICIDS18 and ADFANet web sites. 
+
+N.B. The train-test splits provided has NO attacks in the training set. All attacks are in the test set. Obviously, to run supervised algorithms, you need to re-balance the train and test. Recommended (very quick) approach is to merge train and test, shuffle, and make a new split.
 
 **CONFIGURATION**
 It is necessary to set the proper PATHS. The easiest way is to search through all files for the tag "notebook", and replace the identified paths with your paths. It is intuitive also if you just run and check the error messages. The PATH should be to a directory where you have read and write access.
@@ -37,4 +39,4 @@ python3 main.py  gan adfa run --nb_epochs=20 --label=1 --w=0.1 --m='cross-e' --d
 python3 main.py  gan cicids run --nb_epochs=35 --label=1 --w=0.1 --m='cross-e' --d=2 --rd=42
 
 
-2. Execute ARN. It is sufficient to execute the notebooks ADFA-ARN_ADFA_REV_Generation.ipynb and CICIDS-ARN_CICIDS_REV_Generation.ipynb . You should just have to configure PATHS to your own folders.
+2. Execute ARN. It is sufficient to execute the notebooks ADFA-ARN_ADFA_REV_Generation.ipynb and CICIDS-ARN_CICIDS_REV_Generation.ipynb . You should only have to configure PATHS to your own folders.
