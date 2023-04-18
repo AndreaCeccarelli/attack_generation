@@ -15,6 +15,7 @@ Instructions to reproduce the results of the paper are below.
 2- install TGAN from https://github.com/sdv-dev/TGAN
 
 3- install eGAN (ALAD) from https://github.com/houssamzenati/Adversarially-Learned-Anomaly-Detection
+
 3a - replace the files we provide in this repo, in the ALAD folder, with the one provided by the authors. The files are configured to execute ADAFANet and CICIDS18.
 
 4- download ARN from https://github.com/arnwg/arn
@@ -32,7 +33,7 @@ It is necessary to set the proper PATHS. The easiest way is to searchthe tag "no
 
 **EXECUTION**
 
-We recommend to execute with the following order.
+We strongly recommend to execute with the following order.
 
 1. Execute ALAD (eGAN). Move to the folder where you installed ALAD, and you can execute ALAD on ADFANet and CICIDS respectively with:
 
