@@ -26,7 +26,6 @@ N.B. The train-test splits provided has NO attacks in the training set. All atta
 **CONFIGURATION**
 It is necessary to set the proper PATHS. The easiest way is to search through all files for the tag "notebook", and replace the identified paths with your paths. It is intuitive also if you just run and check the error messages. The PATH should be to a directory where you have read and write access.
 
-All algorithms will write their results to *adfa_competitors.csv* and *cicids_competitors.csv*.
 
 **EXECUTION**
 
@@ -40,3 +39,12 @@ python3 main.py  gan cicids run --nb_epochs=35 --label=1 --w=0.1 --m='cross-e' -
 
 
 2. Execute ARN. It is sufficient to execute the notebooks ADFA-ARN_ADFA_REV_Generation.ipynb and CICIDS-ARN_CICIDS_REV_Generation.ipynb . You should only have to configure PATHS to your own folders.
+
+
+3. Execute TGAN. This is in the notebook "TABGAN - GAN FOR TABULAR DATA-ADFANet" and "TABGAN - GAN FOR TABULAR DATA-CICIDS". You should only have to configure PATHS to your own folders.
+
+4. Execute all the rest: run the notebooks "zero-day attack generation-ADFA" and "zero-day attack generation-CICIDS". The notebooks assume that you start from the  ADFANet and CICDS CSV files, but you can use the splits we provide, and load them instead (and remove the initial loading part).
+
+
+All algorithms will write their results to *adfa_competitors.csv* and *cicids_competitors.csv*. These files will be populated progressively, when you run things.
+
