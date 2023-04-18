@@ -4,7 +4,9 @@ Repository of the paper *Build intrusion detectors without attack knowledge: str
 
 Anonymous version for submission.
 
-Instructions to reproduce the results of the paper.
+PDF submitted, not reported here.
+
+Instructions to reproduce the results of the paper are below.
 
 **INSTALLATION INSTRUCTIONS**
 
@@ -24,7 +26,8 @@ Instructions to reproduce the results of the paper.
 N.B. The train-test splits provided has NO attacks in the training set. All attacks are in the test set. Obviously, to run supervised algorithms, you need to re-balance the train and test. Recommended (very quick) approach is to merge train and test, shuffle, and make a new split.
 
 **CONFIGURATION**
-It is necessary to set the proper PATHS. The easiest way is to search through all files for the tag "notebook", and replace the identified paths with your paths. It is intuitive also if you just run and check the error messages. The PATH should be to a directory where you have read and write access.
+
+It is necessary to set the proper PATHS. The easiest way is to searchthe tag "notebook"  through all files, and replace the identified paths with your paths. You can also just run and check the error messages. The PATHs should be to directories where you have read and write access.
 
 
 **EXECUTION**
@@ -43,7 +46,7 @@ python3 main.py  gan cicids run --nb_epochs=35 --label=1 --w=0.1 --m='cross-e' -
 
 3. Execute TGAN. This is in the notebook "TABGAN - ADFANet" and "TABGAN - CICIDS". You should only have to configure PATHS to your own folders.
 
-4. Execute all the rest: run the notebooks "zero-day attack generation-ADFA" and "zero-day attack generation-CICIDS". The notebooks assume that you start from the  ADFANet and CICDS CSV files, but you can use the splits we provide, and load them instead (and remove the initial loading part).
+4. Execute all the rest: run the notebooks "attack generation-ADFA" and "attack generation-CICIDS". The notebooks assume that you start from the  ADFANet and CICDS CSV files, but you can use the splits we provide, and load them instead (and remove the initial loading part).
 
 
 All algorithms will write their results to *adfa_competitors.csv* and *cicids_competitors.csv*. These files will be populated progressively, when you run things.
