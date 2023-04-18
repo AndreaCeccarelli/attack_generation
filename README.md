@@ -54,4 +54,4 @@ All algorithms will write their results to *adfa_competitors.csv* and *cicids_co
 
 **CONTACTS**
 
-You are welcome to contact us in case of any problem running the above.
+You are welcome to contact us in case of any problem running the above, or for whatever question about our work.
