@@ -41,11 +41,17 @@ python3 main.py  gan adfa run --nb_epochs=20 --label=1 --w=0.1 --m='cross-e' --d
 
 python3 main.py  gan cicids run --nb_epochs=35 --label=1 --w=0.1 --m='cross-e' --d=2 --rd=42
 
+The execution of ALAD will provide results from the ALAD detector in *adfa_competitors.csv* and *cicids_competitors.csv*. Also, it will generate a numpy file that contains generated attacks. This will later used to apply generated attacks togheter with normal data and train supervised and unsupervised algorithms (step 4 below).
 
 2. Execute ARN. It is sufficient to execute the notebooks ADFA-ARN_ADFA_REV_Generation.ipynb and CICIDS-ARN_CICIDS_REV_Generation.ipynb . You should only have to configure PATHS to your own folders.
 
+The execution of ARN will provide results from the ARN detector in *adfa_competitors.csv* and *cicids_competitors.csv*. Also, it will generate a numpy file that contains generated attacks. This will later used to apply generated attacks togheter with normal data and train supervised and unsupervised algorithms (step 4 below).
+
 
 3. Execute TGAN. This is in the notebook "TABGAN - ADFANet" and "TABGAN - CICIDS". You should only have to configure PATHS to your own folders.
+
+The execution of TGAN will generate a numpy file that contains generated attacks. This will later used to apply generated attacks togheter with normal data and train supervised and unsupervised algorithms (step 4 below).
+
 
 4. Execute all the rest: run the notebooks "attack generation-ADFA" and "attack generation-CICIDS". The notebooks assume that you start from the  ADFANet and CICDS CSV files, but you can use the splits we provide, and load them instead (and remove the initial loading part).
 
