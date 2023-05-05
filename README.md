@@ -16,7 +16,7 @@ Instructions to reproduce the results of the paper are below.
 
 3- install eGAN (ALAD) from https://github.com/houssamzenati/Adversarially-Learned-Anomaly-Detection
 
-3a - replace the files we provide in this repo, in the ALAD folder, with the one provided by the authors. The files are configured to execute ADAFANet and CICIDS18.
+3a - use the files we provide in the eGAN folder to replace the ones provided by the eGAN (ALAD) authors. The files are configured to execute ADAFANet and CICIDS18.
 
 4- download and install ARN from https://github.com/arnwg/arn
 
