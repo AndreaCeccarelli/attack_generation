@@ -1,6 +1,6 @@
 # attack_generation
 
-Repository of the paper *Build intrusion detectors without attack knowledge: strategies and limitations - PER*.
+Repository of the paper *Intrusion detection without attack knowledge: generating Out-of-Distribution tabular data - Practical Experience Report*.
 
 Anonymous version for submission.
 
