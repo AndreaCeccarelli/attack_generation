@@ -1,10 +1,6 @@
 # attack_generation
 
-Repository of the paper *Intrusion detection without attack knowledge: generating Out-of-Distribution tabular data - Practical Experience Report*.
-
-Anonymous version for submission.
-
-PDF submitted, not reported here.
+Repository of the paper * Andrea Ceccarelli, Tommaso Zoppi: Intrusion detection without attack knowledge: generating Out-of-Distribution tabular data - Practical Experience Report*, ISSRE 2023.
 
 Instructions to reproduce the results of the paper are below.
 
